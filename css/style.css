@@ -118,7 +118,7 @@ header nav .menu li:last-child a {
 header nav .menu li .activo,
 header nav .menu li a:hover {
     color: var(--color-princial);
-    
+
 }
 
 
@@ -126,7 +126,7 @@ header nav .menu li a:hover {
 
 /*INICIO FOOTER*/
 
-footer{
+footer {
     background-color: var(--color-secundario);
     padding: calc(var(--padding)*2) 0px;
     color: white;
@@ -136,16 +136,17 @@ footer{
     width: 100%;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--color-princial);
 }
 
-.flecha a{
+.flecha a {
     display: block;
     color: var(--color-princial);
     position: fixed;
@@ -157,6 +158,89 @@ footer a:hover{
 
 
 /*FINAL FOOTER*/
+
+/*INICIO HERO*/
+
+
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    color: white;
+    background-color: rgb(141, 139, 139);
+    background-blend-mode: multiply;
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.hero a {
+    color: white;
+
+}
+
+.hero h1 {
+    font-family: var(--fuente-secundaria);
+    font-size: 2.25em;
+
+}
+
+.hero h3 {
+    color: var(--color-princial);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0px;
+}
+
+.hero p {
+
+    font-size: 1.15em;
+}
+
+.hero .social {
+
+    color: white;
+    font-size: 2em;
+
+}
+
+.hero .social li {
+    display: inline-block;
+    margin-right: var(--padding);
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-princial);
+    padding: 1.25em;
+    margin: var(--margingrid) 0px;
+    border: 1px solid var(--color-princial);
+    width: 18%;
+}
+
+.boton a {
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-princial);
+}
+
+.boton:hover i {
+    transform: translateX(5px);
+    transition: 1s all ease;
+}
+
+/*FINAL HERO*/
 
 
 /*MEDIAQUERIES*/
@@ -199,9 +283,10 @@ footer a:hover{
         box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
 
     }
-    footer{
-        
+
+    footer {
+
         text-align: left;
-      
+
     }
 }
