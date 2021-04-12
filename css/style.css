@@ -1,0 +1,38 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/*font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+html{
+    /*scroll animado*/
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-princial: #fa573a;
+    --color-secundario: #24242e;
+    --fuente-princial: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo:68.750em;
+    --margingrid: 1em;
+
+    /*DEFINO VARIABLES QUE SE VAN A REPETIR*/
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: var(--fuente-princial);
+    font-size: var(--fontsize);
+}
+.container{
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
