@@ -91,9 +91,6 @@ header nav ul {
 header nav .hamburguesa {
     cursor: pointer;
 
-
-
-
 }
 
 header nav .hamburguesa div {
@@ -102,46 +99,34 @@ header nav .hamburguesa div {
     width: 1.875em;
     display: block;
 
-
 }
 
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+    padding: calc(var(--padding)*2);
+    border-bottom: 1px solid #aaa;
+}
 
+header nav .menu li:last-child a {
+    border: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header nav .menu li .activo,
+header nav .menu li a:hover {
+    color: var(--color-princial);
+    transition: 2s all ease;
+}
 
 
 /*FINAL HEADER*/
 
 /*MEDIAQUERIES*/
 /*@media(min-width:600px){}
-@media(min-width:1004px){}*/
+*/
 
 @media(min-width:768px) {
     header .nav-top a span {
@@ -151,4 +136,31 @@ header nav .hamburguesa div {
         margin-left: 5px;
     }
 
+}
+
+@media(min-width:1004px) {
+
+    header nav .hamburguesa {
+        display: none;
+
+    }
+
+    header nav .menu li a {
+
+        width: 75%;
+        border-bottom: none;
+        padding: 0 var(--padding);
+    }
+
+    header nav ul {
+        width: auto;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header {
+    box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
+    
 }
