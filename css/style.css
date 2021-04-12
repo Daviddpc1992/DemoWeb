@@ -1,0 +1,166 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/*font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+html {
+    /*scroll animado*/
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-princial: #fa573a;
+    --color-secundario: #24242e;
+    --fuente-princial: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+    --padding: 0.625em
+        /*DEFINO VARIABLES QUE SE VAN A REPETIR*/
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--fuente-princial);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+/*INICIO HEADER*/
+header .nav-top {
+
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--color-princial);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font: 150%;
+
+}
+
+header nav {
+    padding: calc(var(--padding)*2);
+
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo img {
+
+    max-width: 6.250em;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+    display: block;
+
+}
+
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+    padding: calc(var(--padding)*2);
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border: none;
+}
+
+header nav .menu li .activo,
+header nav .menu li a:hover {
+    color: var(--color-princial);
+    transition: 2s all ease;
+}
+
+
+/*FINAL HEADER*/
+
+/*MEDIAQUERIES*/
+/*@media(min-width:600px){}
+*/
+
+@media(min-width:768px) {
+    header .nav-top a span {
+        display: inline;
+        color: white;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+
+}
+
+@media(min-width:1004px) {
+
+    header nav .hamburguesa {
+        display: none;
+
+    }
+
+    header nav .menu li a {
+
+        width: 75%;
+        border-bottom: none;
+        padding: 0 var(--padding);
+    }
+
+    header nav ul {
+        width: auto;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header {
+    box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
+    
+}
