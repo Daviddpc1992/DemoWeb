@@ -4,35 +4,151 @@
 /*font-family: 'Handlee', cursive;
 font-family: 'Montserrat', sans-serif;*/
 
-html{
+html {
     /*scroll animado*/
     scroll-behavior: smooth;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --color-princial: #fa573a;
     --color-secundario: #24242e;
     --fuente-princial: 'Montserrat', sans-serif;
     --fuente-secundaria: 'Handlee', cursive;
     --fontsize: 1em;
-    --anchomaximo:68.750em;
+    --anchomaximo: 68.750em;
     --margingrid: 1em;
-
-    /*DEFINO VARIABLES QUE SE VAN A REPETIR*/
+    --padding: 0.625em
+        /*DEFINO VARIABLES QUE SE VAN A REPETIR*/
 }
-img{
+
+img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-body{
+body {
     font-family: var(--fuente-princial);
     font-size: var(--fontsize);
 }
-.container{
+
+.container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
+}
+
+/*INICIO HEADER*/
+header .nav-top {
+
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--color-princial);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font: 150%;
+
+}
+
+header nav {
+    padding: calc(var(--padding)*2);
+
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo img {
+
+    max-width: 6.250em;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+
+
+
+
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+    display: block;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FINAL HEADER*/
+
+/*MEDIAQUERIES*/
+/*@media(min-width:600px){}
+@media(min-width:1004px){}*/
+
+@media(min-width:768px) {
+    header .nav-top a span {
+        display: inline;
+        color: white;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+
 }
