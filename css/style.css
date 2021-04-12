@@ -118,11 +118,46 @@ header nav .menu li:last-child a {
 header nav .menu li .activo,
 header nav .menu li a:hover {
     color: var(--color-princial);
-    transition: 2s all ease;
+    
 }
 
 
 /*FINAL HEADER*/
+
+/*INICIO FOOTER*/
+
+footer{
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding)*2) 0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+
+}
+footer a:hover{
+    color: var(--color-princial);
+}
+
+.flecha a{
+    display: block;
+    color: var(--color-princial);
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 300%;
+
+}
+
+
+/*FINAL FOOTER*/
+
 
 /*MEDIAQUERIES*/
 /*@media(min-width:600px){}
@@ -161,6 +196,12 @@ header nav .menu li a:hover {
     }
 
     header {
-    box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
-    
+        box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
+
+    }
+    footer{
+        
+        text-align: left;
+      
+    }
 }
