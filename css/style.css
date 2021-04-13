@@ -36,6 +36,11 @@ body {
     font-size: var(--fontsize);
 }
 
+main p {
+    color: #666;
+    line-height: 1.25em;
+}
+
 .container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
@@ -223,7 +228,8 @@ footer a:hover {
     padding: 1.25em;
     margin: var(--margingrid) 0px;
     border: 1px solid var(--color-princial);
-    
+    width: 35%;
+
 }
 
 .boton a {
@@ -242,10 +248,117 @@ footer a:hover {
 
 /*FINAL HERO*/
 
+/*INICIO OUR SERVICES*/
+
+main section {
+    padding: 2.125em 1.5em;
+
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-princial);
+    font-family: var(--fuente-princialprincial);
+
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--color-princial);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-princial);
+}
+
+main #ourservices .grid {
+    display: grid;
+    gap: var(--margingrid);
+
+
+}
+
+main #ourservices .grid article {
+    padding: 1.5em 0px;
+    border-bottom: 1px solid #aaa;
+
+}
+
+main section h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: var(--padding) 0;
+
+}
+
+.enlace {
+    display:inline-block;
+    padding-top: var(--padding);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-princial);
+    
+}
+
+.enlace i{
+    transition: .5s all ease;
+}
+.enlace:hover i {
+    
+    transform: translateX(5px);   
+}
+
+main #ourservices article>div .fas{
+    color: var(--color-princial);
+    font-size: 1.5em;
+    border: 1px solid var(--color-princial);
+    padding: .5em;
+
+}
+.fa-truck{
+    transform: rotatey(180deg);
+}
+
+/*FIN OUR SERVICES*/
+
+
+
+
 
 /*MEDIAQUERIES*/
-/*@media(min-width:600px){}
-*/
+@media(min-width:600px) {
+    main #ourservices .grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    main #ourservices .grid article{
+        border-bottom: 0px solid #aaa;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 1/3;
+
+    }
+}
+
+
+
 
 @media(min-width:768px) {
     header .nav-top a span {
@@ -255,6 +368,15 @@ footer a:hover {
         margin-left: 5px;
     }
 
+    main #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 3/4;
+
+    }
 }
 
 @media(min-width:1004px) {
