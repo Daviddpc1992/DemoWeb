@@ -374,6 +374,52 @@ main .imagen:hover .marco img{
 /*FIN ABOUT US*/
 
 
+/*INICIO MENU*/
+main{
+    background-color: black;
+}
+main #menu h2 {
+    color: white;
+}
+main .food li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: calc(var(--padding)*2);
+    
+}
+
+main .food li:last-child a {
+    border: none;
+}
+
+main .food li .activo,
+main .food li a:hover {
+    background-color: var(--color-princial);
+    border-radius: 10px;
+}
+main .food h3{
+    margin-top: calc(var(--margingrid)*2);
+    color: white;
+}
+
+main .food .line hr{
+    
+    width: 3.7em;
+    margin: 0 auto;
+    color: var(--color-princial);
+    font-weight: 700;
+    position: relative;
+    right: 9.450em;
+    margin-bottom: calc(var(--margingrid)*2);
+    
+}
+
+
+/*FIN  MENU*/
+
 
 /*MEDIAQUERIES*/
 @media(min-width:600px) {
