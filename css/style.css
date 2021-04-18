@@ -466,6 +466,54 @@ main #menu article a {
 
 /*FIN  MENU*/
 
+/*INICIO  BLOG*/
+
+main #blog .blog {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--padding)*2);
+
+
+}
+main #blog .blog article{
+    width: 40%;
+}
+
+main #blog .blog .img {
+    position: relative;
+
+    
+}
+
+main #blog .blog .img .etiqueta{
+    position: absolute;
+    top: 0;
+    color: white; 
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: var(--padding);
+    font-weight: 700;
+    background-color: #fa573aa6;
+    background-blend-mode: multiply;
+
+
+}
+
+main #blog .blog article h6{
+    color: var(--color-princial);
+    font-weight: 700;
+    padding: var(--padding) 0;
+}
+
+
+
+
+
+/*FIN  BLOG*/
+
 
 /*MEDIAQUERIES*/
 @media(min-width:600px) {
@@ -498,10 +546,11 @@ main #menu article a {
     }
 
 
-    main #menu .gridmenu .grid-dos{
-        margin-top: ;
-        grid-column:2/5;
+    main #menu .gridmenu .grid-dos {
+        margin-top: -15px;
+        grid-column: 2/5;
     }
+
     main #menu article .img {
         grid-column: 1/2;
 
@@ -510,17 +559,15 @@ main #menu article a {
     main #menu article .text {
         grid-column: 2/4;
         margin: 0 var(--padding);
-        
+
+    }
+
+    main #blog .blog article{
+        width: 30%;
     }
 
 
-  
-
-
 }
-
-
-
 
 
 @media(min-width:768px) {
