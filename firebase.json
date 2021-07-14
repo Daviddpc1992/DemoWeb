@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Daviddpc1992/DemoWeb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
