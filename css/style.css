@@ -1,5 +1,6 @@
+<<<<<<< Updated upstream
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
 /*font-family: 'Handlee', cursive;
 font-family: 'Montserrat', sans-serif;*/
@@ -14,10 +15,10 @@ html {
 }
 
 :root {
-    --color-princial: #fa573a;
-    --color-secundario: #24242e;
+    --color-princial: #3FA9F5;
+    --color-secundario: #4D4D4D;
     --fuente-princial: 'Montserrat', sans-serif;
-    --fuente-secundaria: 'Handlee', cursive;
+    --fuente-secundaria: 'Abril Fatface';
     --fontsize: 1em;
     --anchomaximo: 68.750em;
     --margingrid: 1em;
@@ -45,6 +46,9 @@ main p {
     max-width: var(--anchomaximo);
     margin: 0 auto;
 }
+.menuprincipal{
+    background-color: white;
+}
 
 /*INICIO HEADER*/
 header .nav-top {
@@ -69,9 +73,17 @@ header .nav-top a span {
 
 header .nav-top a i {
     font: 150%;
+    transition: all ease .5s;
 
 }
+.hero{
+    margin: auto!important;
+    text-align: center;
+}
+header .nav-top a i:hover {
+   color: white;
 
+}
 header nav {
     padding: calc(var(--padding)*2);
 
@@ -105,7 +117,9 @@ header nav .hamburguesa div {
     display: block;
 
 }
-
+.active{
+    display: block;
+}
 header nav .menu li a {
     display: block;
     width: 100%;
@@ -127,8 +141,30 @@ header nav .menu li a:hover {
 }
 
 
+
 /*FINAL HEADER*/
 
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 60vh;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+    #video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+    }
 /*INICIO FOOTER*/
 
 footer {
@@ -139,6 +175,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
 footer a {
@@ -169,14 +206,14 @@ footer a:hover {
 
 
 .hero {
-    background-image: url(../images/fondo.jpg);
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     color: white;
-    background-color: rgb(141, 139, 139);
+
     background-blend-mode: multiply;
 
 }
@@ -211,7 +248,7 @@ a {
 }
 
 .hero .social {
-
+    margin-top: 15%;
     color: white;
     font-size: 2em;
 
@@ -220,7 +257,16 @@ a {
 .hero .social li {
     display: inline-block;
     margin-right: var(--padding);
+    transition: all ease .5s;
 }
+
+
+
+.social li a:hover {
+ 
+    color: var(--color-princial);
+}
+
 
 .boton {
     background-color: var(--color-princial);
@@ -323,7 +369,14 @@ main section h3 {
     transform: translateX(5px);
 }
 
-main #ourservices article>div .fas {
+main #ourservices article>div .fas  {
+    color: var(--color-princial);
+    font-size: 1.5em;
+    border: 1px solid var(--color-princial);
+    padding: .5em;
+
+}
+main #ourservices article>div .fab  {
     color: var(--color-princial);
     font-size: 1.5em;
     border: 1px solid var(--color-princial);
@@ -483,6 +536,7 @@ main #blog .blog article{
 
 main #blog .blog .img {
     position: relative;
+    filter: brightness(.5)
 
     
 }
@@ -496,12 +550,36 @@ main #blog .blog .img .etiqueta{
     height: 60px;
     padding: var(--padding);
     font-weight: 700;
-    background-color: #fa573aa6;
+    background-color: var(--color-princial);
     background-blend-mode: multiply;
 
 
 }
+main #blog .blog .img .etiquetaDos{
+    position: absolute;
+    top: 0;
+    color: white; 
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: var(--padding);
+    font-weight: 700;
+    background-blend-mode: multiply;
+    opacity: 0;
+    transition: all ease .4s;
+    cursor: pointer;
 
+
+
+}
+main #blog .blog .img:hover .etiquetaDos{
+    opacity: 1;
+}
+main #blog .blog .img:hover {
+    filter: brightness(1)
+
+    
+}
 main #blog .blog article h6{
     color: var(--color-princial);
     font-weight: 700;
@@ -625,4 +703,710 @@ main #blog .blog article h6{
         text-align: left;
 
     }
+=======
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
+
+/*font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+html {
+    /*scroll animado*/
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-princial: #3FA9F5;
+    --color-secundario: #4D4D4D;
+    --fuente-princial: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'Abril Fatface';
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+    --padding: 0.625em
+        /*DEFINO VARIABLES QUE SE VAN A REPETIR*/
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--fuente-princial);
+    font-size: var(--fontsize);
+}
+
+main p {
+    color: #666;
+    line-height: 1.25em;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+.menuprincipal{
+    background-color: white;
+}
+
+/*INICIO HEADER*/
+header .nav-top {
+
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--color-princial);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font: 150%;
+    transition: all ease .5s;
+
+}
+.hero{
+    margin: auto!important;
+    text-align: center;
+}
+header .nav-top a i:hover {
+   color: white;
+
+}
+header nav {
+    padding: calc(var(--padding)*2);
+
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo img {
+
+    max-width: 6.250em;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+    display: block;
+
+}
+.active{
+    display: block;
+}
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #aaa;
+    padding: calc(var(--padding)*2);
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border: none;
+}
+
+header nav .menu li .activo,
+header nav .menu li a:hover {
+    color: var(--color-princial);
+
+}
+
+
+
+/*FINAL HEADER*/
+
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 60vh;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+    #video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+    }
+/*INICIO FOOTER*/
+
+footer {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding)*2) 0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: var(--color-princial);
+}
+
+.flecha a {
+    display: block;
+    color: var(--color-princial);
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 300%;
+
+}
+
+
+/*FINAL FOOTER*/
+
+/*INICIO HERO*/
+
+
+
+.hero {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: white;
+
+    background-blend-mode: multiply;
+
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+a {
+    color: white;
+
+}
+
+.hero h1 {
+    font-family: var(--fuente-secundaria);
+    font-size: 2.25em;
+
+}
+
+.hero h3 {
+    color: var(--color-princial);
+    font-size: 1.25em;
+    margin: var(--margingrid) 0px;
+}
+
+.hero p {
+
+    font-size: 1.15em;
+}
+
+.hero .social {
+    margin-top: 15%;
+    color: white;
+    font-size: 2em;
+
+}
+
+.hero .social li {
+    display: inline-block;
+    margin-right: var(--padding);
+    transition: all ease .5s;
+}
+
+
+
+.social li a:hover {
+ 
+    color: var(--color-princial);
+}
+
+
+.boton {
+    background-color: var(--color-princial);
+    color: white;
+    display: inline-block;
+    padding: 1.15em;
+    margin: var(--margingrid) 0px;
+    border: 1px solid var(--color-princial);
+    text-decoration: none;
+    transition: .5s all ease;
+
+}
+
+
+.boton:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-princial);
+    color: var(--color-princial);
+}
+
+.boton:hover i {
+    transform: translateX(5px);
+    transition: 1s all ease;
+}
+
+/*FINAL HERO*/
+
+/*INICIO OUR SERVICES*/
+
+main section {
+    padding: 2.125em 1.5em;
+
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-princial);
+    font-family: var(--fuente-princialprincial);
+
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--color-princial);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-princial);
+}
+
+main #ourservices .grid {
+    display: grid;
+    gap: var(--margingrid);
+
+
+}
+
+main #ourservices .grid article {
+    padding: 1.5em 0px;
+    border-bottom: 1px solid #aaa;
+
+}
+
+main section h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: var(--padding) 0;
+
+}
+
+.enlace {
+    display: inline-block;
+    padding-top: var(--padding);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-princial);
+
+}
+
+.enlace i {
+    transition: .5s all ease;
+}
+
+.enlace:hover i {
+
+    transform: translateX(5px);
+}
+
+main #ourservices article>div .fas  {
+    color: var(--color-princial);
+    font-size: 1.5em;
+    border: 1px solid var(--color-princial);
+    padding: .5em;
+
+}
+main #ourservices article>div .fab  {
+    color: var(--color-princial);
+    font-size: 1.5em;
+    border: 1px solid var(--color-princial);
+    padding: .5em;
+
+}
+
+.fa-truck {
+    transform: rotatey(180deg);
+}
+
+/*FIN OUR SERVICES*/
+/*INICIO ABOUT US*/
+
+main section:nth-child(2) {
+    padding-bottom: 90px;
+}
+
+main section h4 {
+    margin: var(--padding);
+    color: var(--color-princial);
+}
+
+main section .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+main .imagen .marco {
+
+    border: 4px solid var(--color-princial);
+    transform: rotatez(10deg);
+    transition: 1s;
+}
+
+main .imagen .marco img {
+    transform: rotatez(-10deg);
+    transition: 1s;
+}
+
+main .imagen:hover .marco {
+
+    transform: rotatez(0deg);
+}
+
+main .imagen:hover .marco img {
+
+    transform: rotatez(0deg);
+}
+
+
+
+
+/*FIN ABOUT US*/
+
+
+/*INICIO MENU*/
+
+
+
+main .food li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: 700;
+    padding: calc(var(--padding)*2);
+
+}
+
+main .food li:last-child a {
+    border: none;
+}
+
+main .food li .activo,
+main .food li a:hover {
+    background-color: var(--color-princial);
+    border-radius: 10px;
+}
+
+main .food h3 {
+    margin-top: calc(var(--margingrid)*2);
+
+}
+
+main .food .line hr {
+
+    width: 3.7em;
+    margin: 0 auto;
+    color: var(--color-princial);
+    font-weight: 700;
+    position: absolute;
+
+}
+
+main .food p {
+    margin: calc(var(--margingrid)*2) 0;
+}
+
+main #menu article {
+    margin: var(--margingrid);
+}
+
+main #menu article h3 {
+    font-size: calc(var(--fontsize)*0.9);
+    margin-top: var(--margingrid);
+
+}
+
+main #menu article {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+
+}
+
+main #menu article .img {
+    grid-column: 1/6;
+
+}
+
+main #menu article .text {
+    grid-column: 1/5;
+    font-size: calc(var(--fontsize)*.9);
+}
+
+
+main #menu article h5 {
+    grid-column: 5/6;
+    color: var(--color-princial);
+    font-weight: 700;
+    padding: var(--padding);
+
+}
+
+main #menu article a {
+    margin: var(--margingrid) 0;
+}
+
+
+/*FIN  MENU*/
+
+/*INICIO  BLOG*/
+
+main #blog .blog {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--padding)*2);
+
+
+}
+main #blog .blog article{
+    width: 40%;
+}
+
+main #blog .blog .img {
+    position: relative;
+    filter: brightness(.5)
+
+    
+}
+
+main #blog .blog .img .etiqueta{
+    position: absolute;
+    top: 0;
+    color: white; 
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: var(--padding);
+    font-weight: 700;
+    background-color: var(--color-princial);
+    background-blend-mode: multiply;
+
+
+}
+main #blog .blog .img .etiquetaDos{
+    position: absolute;
+    top: 0;
+    color: white; 
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: var(--padding);
+    font-weight: 700;
+    background-blend-mode: multiply;
+    opacity: 0;
+    transition: all ease .4s;
+    cursor: pointer;
+
+
+
+}
+main #blog .blog .img:hover .etiquetaDos{
+    opacity: 1;
+}
+main #blog .blog .img:hover {
+    filter: brightness(1)
+
+    
+}
+main #blog .blog article h6{
+    color: var(--color-princial);
+    font-weight: 700;
+    padding: var(--padding) 0;
+}
+
+
+
+
+
+/*FIN  BLOG*/
+
+
+/*MEDIAQUERIES*/
+@media(min-width:600px) {
+    main #ourservices .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 1/3;
+    }
+
+    main #ourservices .grid article {
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+    }
+
+    main section .flex {
+        flex-direction: row;
+    }
+
+    main section .flex .columna {
+        margin: 0 var(--margingrid);
+    }
+
+    main #menu .gridmenu {
+        display: grid;
+        grid-template-columns: repeat(3, fr);
+        gap: var(--margingrid);
+    }
+
+
+    main #menu .gridmenu .grid-dos {
+        margin-top: -15px;
+        grid-column: 2/5;
+    }
+
+    main #menu article .img {
+        grid-column: 1/2;
+
+    }
+
+    main #menu article .text {
+        grid-column: 2/4;
+        margin: 0 var(--padding);
+
+    }
+
+    main #blog .blog article{
+        width: 30%;
+    }
+
+
+}
+
+
+@media(min-width:768px) {
+    header .nav-top a span {
+        display: inline;
+        color: white;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+
+    main #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 3/4;
+
+    }
+
+    main section .flex .columna {
+        margin: 0 var(--margingrid);
+    }
+}
+
+@media(min-width:1004px) {
+
+    header nav .hamburguesa {
+        display: none;
+
+    }
+
+    header nav .menu li a {
+
+        width: 75%;
+        border-bottom: none;
+        padding: 0 var(--padding);
+    }
+
+    header nav ul {
+        width: auto;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header {
+        box-shadow: 0px 1px 10px rgba(189, 189, 189, 0.486);
+
+    }
+
+    footer {
+
+        text-align: left;
+
+    }
+>>>>>>> Stashed changes
 }
