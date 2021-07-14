@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Hamburguesería - Rovers</title>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+
+        const menu = document.querySelector('.menu')
+  
+        menuToggle.addEventListener('click', () => {
+          menu.style.heigth = '0px';
+    
+        })
+    </script>
+
+    <title>New Observer - Project</title>
 
 </head>
 
@@ -20,30 +31,30 @@
             <div class="nav-top">
                 <div class="container">
                     <div>
-                        <a href="mailto:rover@gmail.com">
+                        <a href="mailto:Observer@gmail.com">
                             <i class="fas fa-envelope"></i>
-                            <span>rover@gmail.com</span>
+                        
 
                         </a>
                     </div>
                     <div>
                         <a href="tel: +34919111111">
                             <i class="fas fa-phone"></i>
-                            <span>91911111</span>
+                        
 
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <i class="fas fa-shopping-cart"></i>
-                            <span>Carrito compra</span>
+                            
 
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <i class="fas fa-user-circle"></i>
-                            <span>Usuario</span>
+                           
 
                         </a>
                     </div>
@@ -51,24 +62,24 @@
                 </div>
             </div>
 
-            <nav>
-                <div class="container">
+            <nav class="menuprincipal">
+                <div class="container ">
 
                     <div class="logo">
                         <a href="#"><img src="images/logo.jpg" alt="Rovers"></a>
                     </div>
 
-                    <div class="hamburguesa">
+                    <div class="hamburguesa toggle">
                         <div></div>
-                        <div></div>
+                        <div style="width: 50%"></div>
                         <div></div>
                     </div>
-
+                
                     <ul class="menu">
-                        <li><a class="activo" href="index.html"> Inicio</a></li>
-                        <li><a href="menu.html"> Menú</a></li>
-                        <li><a href="blog.html"> Blog</a></li>
+                        <li><a class="activo" href="index.html"> Home</a></li>
+                        <li><a href="menu.html"> Service</a></li>
                         <li><a href="team.html"> Team</a></li>
+                        <li><a href="blog.html"> Blog</a></li>
                     </ul>
                 </div>
 
@@ -77,12 +88,20 @@
 
 
         <div class="hero">
-            <div class="container">
-                <h1>Las mejores hamburgues del mundo</h1>
-                <h3>Bienvenido a nuesta Hamburguesería</h3>
-                <p>Come a partir de 15 €</p>
+
+            <video id="video_background" loop autoplay preload muted>
+                <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+                <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/ogg; codecs="theora,vorbis"' />
+                <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/webm; codecs="vp8,vorbis"' />
+                </video>
+
+
+            <div class="container hero">
+                <h1>New Observer</h1>
+                <h3>Is the next generation business</h3>
+              
                 <div>
-                    <a class="boton" href="#">Nuestra Carta <i class="fas fa-arrow-right"></i></a>
+                    <a class="boton" href="#service">Play Mission <i class="fas fa-play"></i></a>
                 </div>
 
                 <ul class="social">
@@ -91,47 +110,48 @@
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
-
-
+  
+        
+          
         </div>
         <main>
 
             <section id="ourservices">
-                <div class="container">
+                <div class="container" id="service">
                     <h2>Our <span>Service</span></h2>
                     <div class="underline">
                         <hr noshade="noshade">
-                        <span>X</span>
+                 
                     </div>
                     <div class="grid">
                         <article>
                             <div>
-                                <i class="fas fa-seedling"></i>
+                                <i class="fas fa-info"></i>
                             </div>
-                            <h3>1. Carne 100% natural</h3>
+                            <h3>1. Overview</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui tenetur vitae? Quam
                                 quaerat nemo veritatis itaque porro amet? Corrupti?</p>
-                            <a class="enlace" href="#">Leer más <i class="fas fa-arrow-right"></i></a>
+                            <a class="enlace" href="#">Show more <i class="fas fa-arrow-right"></i></a>
                         </article>
 
                         <article>
                             <div>
-                                <i class="fas fa-truck"></i>
+                                <i class="fab fa-pushed"></i>
                             </div>
-                            <h3>2. Cocina Moderna</h3>
+                            <h3>2. Campaigns</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui tenetur vitae? Quam
                                 quaerat nemo veritatis itaque porro amet? Corrupti?</p>
-                            <a class="enlace" href="#">Leer más <i class="fas fa-arrow-right"></i></a>
+                            <a class="enlace" href="#">Show more <i class="fas fa-arrow-right"></i></a>
                         </article>
 
                         <article>
                             <div>
                                 <i class="fas fa-heart"></i>
                             </div>
-                            <h3>3. Servicio Impecable</h3>
+                            <h3>3. Autopilot</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui tenetur vitae? Quam
                                 quaerat nemo veritatis itaque porro amet? Corrupti?</p>
-                            <a class="enlace" href="#">Leer más <i class="fas fa-arrow-right"></i></a>
+                            <a class="enlace" href="#">Show more <i class="fas fa-arrow-right"></i></a>
                         </article>
                     </div>
                 </div>
@@ -151,19 +171,19 @@
                         <div class="columna">
                             <div class="imagen">
                                 <div class="marco">
-                                    <img src="./images/about-main.jpg" alt="nuesto chef">
+                                    <img src="https://cuadernosdeseguridad.com/wp-content/uploads/2020/06/nube-tecnolog%C3%ADa.jpg" alt="nube">
                                 </div>
                             </div>
                         </div>
 
                         <div class="columna">
                             <h3>The History</h3>
-                            <h4>Our Restauran</h4>
+                            <h4>Our mission</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil alias repellat nemo natus
                                 voluptatem delectus exercitationem, esse autem! In aut molestias amet quasi officiis
                                 officia.</p>
                             <div>
-                                <a class="boton" href="#">Leer más <i class="fas fa-arrow-right"></i></a>
+                                <a class="boton" href="#">Show more <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
 
