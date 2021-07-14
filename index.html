@@ -12,10 +12,10 @@
         const menuToggle = document.querySelector('.toggle');
 
         const menu = document.querySelector('.menu')
-  
+
         menuToggle.addEventListener('click', () => {
-          menu.style.heigth = '0px';
-    
+            menu.style.heigth = '0px';
+
         })
     </script>
 
@@ -33,28 +33,28 @@
                     <div>
                         <a href="mailto:Observer@gmail.com">
                             <i class="fas fa-envelope"></i>
-                        
+
 
                         </a>
                     </div>
                     <div>
                         <a href="tel: +34919111111">
                             <i class="fas fa-phone"></i>
-                        
+
 
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <i class="fas fa-shopping-cart"></i>
-                            
+
 
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <i class="fas fa-user-circle"></i>
-                           
+
 
                         </a>
                     </div>
@@ -74,7 +74,7 @@
                         <div style="width: 50%"></div>
                         <div></div>
                     </div>
-                
+
                     <ul class="menu">
                         <li><a class="activo" href="index.html"> Home</a></li>
                         <li><a href="menu.html"> Service</a></li>
@@ -93,13 +93,13 @@
                 <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/mp4; codecs="avc1,mp4a"' />
                 <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/ogg; codecs="theora,vorbis"' />
                 <source src="/images/pexels-roman-skrypnyk-5941316.mp4" type='video/webm; codecs="vp8,vorbis"' />
-                </video>
+            </video>
 
 
             <div class="container hero">
                 <h1>New Observer</h1>
                 <h3>Is the next generation business</h3>
-              
+
                 <div>
                     <a class="boton" href="#service">Play Mission <i class="fas fa-play"></i></a>
                 </div>
@@ -110,9 +110,9 @@
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
-  
-        
-          
+
+
+
         </div>
         <main>
 
@@ -121,7 +121,7 @@
                     <h2>Our <span>Service</span></h2>
                     <div class="underline">
                         <hr noshade="noshade">
-                 
+
                     </div>
                     <div class="grid">
                         <article>
@@ -171,7 +171,8 @@
                         <div class="columna">
                             <div class="imagen">
                                 <div class="marco">
-                                    <img src="https://cuadernosdeseguridad.com/wp-content/uploads/2020/06/nube-tecnolog%C3%ADa.jpg" alt="nube">
+                                    <img src="https://cuadernosdeseguridad.com/wp-content/uploads/2020/06/nube-tecnolog%C3%ADa.jpg"
+                                        alt="nube">
                                 </div>
                             </div>
                         </div>
@@ -212,6 +213,26 @@
 
 
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCzBaq68rpvsr-4J_YT-mtma9qRjgUgC8w",
+            authDomain: "ejemploweb21-1d42e.firebaseapp.com",
+            projectId: "ejemploweb21-1d42e",
+            storageBucket: "ejemploweb21-1d42e.appspot.com",
+            messagingSenderId: "756990047388",
+            appId: "1:756990047388:web:dcd8371996f82058166959"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
 </body>
 
