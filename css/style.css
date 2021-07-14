@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap');
 
 /*font-family: 'Handlee', cursive;
 font-family: 'Montserrat', sans-serif;*/
@@ -14,10 +14,10 @@ html {
 }
 
 :root {
-    --color-princial: #fa573a;
-    --color-secundario: #24242e;
+    --color-princial: #3FA9F5;
+    --color-secundario: #4D4D4D;
     --fuente-princial: 'Montserrat', sans-serif;
-    --fuente-secundaria: 'Handlee', cursive;
+    --fuente-secundaria: 'Abril Fatface';
     --fontsize: 1em;
     --anchomaximo: 68.750em;
     --margingrid: 1em;
@@ -45,6 +45,9 @@ main p {
     max-width: var(--anchomaximo);
     margin: 0 auto;
 }
+.menuprincipal{
+    background-color: white;
+}
 
 /*INICIO HEADER*/
 header .nav-top {
@@ -69,9 +72,17 @@ header .nav-top a span {
 
 header .nav-top a i {
     font: 150%;
+    transition: all ease .5s;
 
 }
+.hero{
+    margin: auto!important;
+    text-align: center;
+}
+header .nav-top a i:hover {
+   color: white;
 
+}
 header nav {
     padding: calc(var(--padding)*2);
 
@@ -105,7 +116,9 @@ header nav .hamburguesa div {
     display: block;
 
 }
-
+.active{
+    display: block;
+}
 header nav .menu li a {
     display: block;
     width: 100%;
@@ -127,8 +140,30 @@ header nav .menu li a:hover {
 }
 
 
+
 /*FINAL HEADER*/
 
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 60vh;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+    #video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+    }
 /*INICIO FOOTER*/
 
 footer {
@@ -139,6 +174,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
 footer a {
@@ -169,14 +205,14 @@ footer a:hover {
 
 
 .hero {
-    background-image: url(../images/fondo.jpg);
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     color: white;
-    background-color: rgb(141, 139, 139);
+
     background-blend-mode: multiply;
 
 }
@@ -211,7 +247,7 @@ a {
 }
 
 .hero .social {
-
+    margin-top: 15%;
     color: white;
     font-size: 2em;
 
@@ -220,7 +256,16 @@ a {
 .hero .social li {
     display: inline-block;
     margin-right: var(--padding);
+    transition: all ease .5s;
 }
+
+
+
+.social li a:hover {
+ 
+    color: var(--color-princial);
+}
+
 
 .boton {
     background-color: var(--color-princial);
@@ -323,7 +368,14 @@ main section h3 {
     transform: translateX(5px);
 }
 
-main #ourservices article>div .fas {
+main #ourservices article>div .fas  {
+    color: var(--color-princial);
+    font-size: 1.5em;
+    border: 1px solid var(--color-princial);
+    padding: .5em;
+
+}
+main #ourservices article>div .fab  {
     color: var(--color-princial);
     font-size: 1.5em;
     border: 1px solid var(--color-princial);
@@ -483,6 +535,7 @@ main #blog .blog article{
 
 main #blog .blog .img {
     position: relative;
+    filter: brightness(.5)
 
     
 }
@@ -496,12 +549,36 @@ main #blog .blog .img .etiqueta{
     height: 60px;
     padding: var(--padding);
     font-weight: 700;
-    background-color: #fa573aa6;
+    background-color: var(--color-princial);
     background-blend-mode: multiply;
 
 
 }
+main #blog .blog .img .etiquetaDos{
+    position: absolute;
+    top: 0;
+    color: white; 
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding: var(--padding);
+    font-weight: 700;
+    background-blend-mode: multiply;
+    opacity: 0;
+    transition: all ease .4s;
+    cursor: pointer;
 
+
+
+}
+main #blog .blog .img:hover .etiquetaDos{
+    opacity: 1;
+}
+main #blog .blog .img:hover {
+    filter: brightness(1)
+
+    
+}
 main #blog .blog article h6{
     color: var(--color-princial);
     font-weight: 700;
