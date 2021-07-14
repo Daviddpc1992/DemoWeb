@@ -1,2 +1,0 @@
-hamburgueseria
-/img

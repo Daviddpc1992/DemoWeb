@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-images/
-=======
 # Logs
 logs
 *.log
@@ -68,4 +64,3 @@ node_modules/
 
 # dotenv environment variables file
 .env
->>>>>>> main
